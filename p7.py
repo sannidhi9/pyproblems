@@ -1,3 +1,4 @@
+#start
 #https://leetcode.com/problems/search-insert-position/
 #visit the above link to see problem  description
 class Solution:
@@ -24,3 +25,6 @@ class Solution:
                 return i
             elif (i+1)==len(nums)-1 and target>nums[i+1]:
                 return i+2            
+
+
+#end

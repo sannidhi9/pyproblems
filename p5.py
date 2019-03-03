@@ -1,3 +1,4 @@
+#start
 #https://leetcode.com/problems/remove-element/
 #visit the abve link to see the problem description
 class Solution:
@@ -8,3 +9,4 @@ class Solution:
                 del nums[i]
                 
         return len(nums)        
+#end

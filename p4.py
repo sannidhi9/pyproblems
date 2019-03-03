@@ -1,3 +1,4 @@
+#start
 #https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 class Solution:
     def removeDuplicates(self, nums: 'List[int]') -> 'int':
@@ -5,3 +6,4 @@ class Solution:
             if nums[i] == nums[i-1]:
                 del nums[i]
         return len(nums)
+#end

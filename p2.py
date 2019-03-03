@@ -1,3 +1,4 @@
+#start
 #https://leetcode.com/problems/palindrome-number/
 #clink the above link to the problem description
 class Solution:
@@ -11,3 +12,4 @@ class Solution:
                 return False
         return True
         
+#end

@@ -3,7 +3,7 @@
 class Solution:
     def isPalindrome(self, x: 'int') -> 'bool':
         x=str(x)
-        j=len(x)/2
+        j=len(x)//2
         for i in range(j):
             if x[int(i)]!=x[int(len(x)-1-i)]:
                 return False

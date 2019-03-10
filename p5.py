@@ -11,7 +11,5 @@ class Solution:
             if nums[i]==val:
                 count=count+1
                 for j in range(i,len(nums)-1):
-                    temp=nums[j]
                     nums[j]=nums[j+1]
-                    nums[j+1]=temp  
         return len(nums)-count

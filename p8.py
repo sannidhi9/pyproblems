@@ -2,7 +2,14 @@
 #visit the above link to see problem description
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        x=s.split()
-        if len(s)!=0 and len(x)!=0:
-            return len(x[len(x)-1])
-        else:return 0
+        c=0
+        b=0
+        for i in range(len(s)-1,-1,-1):
+            if s[i]==' ':
+                c=c+1
+            else:break
+        for i in range(len(s)-1-c,-1,-1):
+            if s[i]==' ':
+                break
+            b=b+1
+        return b

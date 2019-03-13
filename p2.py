@@ -2,12 +2,10 @@
 #clink the above link to the problem description
 class Solution:
     def isPalindrome(self, x: 'int') -> 'bool':
-        x=str(x)
-        i=0
-        i=int(i)
-        j=int(len(x)/2)
-        for i in range(j):
-            if x[int(i)]!=x[int(len(x)-1-i)]:
-                return False
-        return True
-        
+        y,sum1=x,0
+        if x<0:return False
+        while y!=0:
+            dig=y%10
+            sum1=sum1*10+dig
+            y=y//10
+        return sum1==x

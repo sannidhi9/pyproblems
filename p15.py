@@ -1,9 +1,11 @@
 #https://leetcode.com/problems/single-number/
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        h=[]
+        h,j={},0
         for i in nums:
             if i not in h:
-                h=h+[i]
-            else :h.remove(i)
-        return h[0]
+                h.update({i:j})
+                j=j+1
+            else:h.pop(i)
+        k=list(h.keys())
+        return k[0]

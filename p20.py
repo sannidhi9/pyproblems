@@ -1,9 +1,9 @@
 #https://leetcode.com/problems/number-of-1-bits/
 class Solution(object):
     def hammingWeight(self, n):
-        s,count=bin(n),0
-        s=str(s)
-        for i in range(len(s)):
-            if s[i]=='1':
-                count=count+1
+        count = 0
+        while n:
+            if n%2 == 1:
+                count += 1
+            n = n//2
         return count

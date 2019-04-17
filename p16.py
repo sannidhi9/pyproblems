@@ -2,9 +2,9 @@
 class Solution:
     def convertToTitle(self, n: int) -> str:
         d='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        r=''
+        r=[]
         while n>0:
             n=n-1
-            r=d[n%26]+r
+            r.append(d[n%26])
             n=n//26
-        return r
+        return ''.join(r[::-1])
